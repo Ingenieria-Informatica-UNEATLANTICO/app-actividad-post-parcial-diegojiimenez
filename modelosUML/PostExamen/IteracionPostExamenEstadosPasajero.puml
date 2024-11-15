@@ -1,0 +1,5 @@
+@startuml IteracionPostExamenEstadosPasajero
+[*] --> EsperandoTransporte
+EsperandoTransporte --> EnRuta : abordar vehículo
+EnRuta --> Finalizado : llegar a destino
+@enduml

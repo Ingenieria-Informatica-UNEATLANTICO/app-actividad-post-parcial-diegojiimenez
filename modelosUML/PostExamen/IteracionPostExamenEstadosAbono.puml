@@ -1,0 +1,8 @@
+@startuml IteracionPostExamenEstadosAbono
+[*] --> Activo
+Activo --> Vencido : expira vigencia
+Activo --> Usado : viaje realizado
+Usado --> Activo : renovar saldo
+Usado --> Vencido : expira vigencia sin renovar
+Vencido --> Activo : recargar y activar
+@enduml

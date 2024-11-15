@@ -1,0 +1,9 @@
+@startuml IteracionPostExamenEstadosIncidencia
+
+[*] --> Reportada
+Reportada --> EnProceso : asignar atención
+EnProceso --> Resuelta : resolver problema
+EnProceso --> Cerrada : cierre sin resolución
+Resuelta --> Cerrada : finalización de caso
+
+@enduml

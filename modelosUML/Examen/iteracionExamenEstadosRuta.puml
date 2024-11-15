@@ -1,0 +1,10 @@
+@startuml iteracionExamenEstadosRuta
+[*] --> IniciandoRuta
+
+IniciandoRuta --> PasandoPorParada
+
+PasandoPorParada --> TerminandoRuta
+
+TerminandoRuta --> [*]
+
+@enduml

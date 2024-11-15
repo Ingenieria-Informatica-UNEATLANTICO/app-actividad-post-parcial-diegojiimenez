@@ -1,0 +1,5 @@
+@startuml IteracionPostExamenEstadosRuta
+[*] --> Planificada
+Planificada --> Activa : iniciar ruta
+Activa --> Finalizada : completar ruta
+@enduml
