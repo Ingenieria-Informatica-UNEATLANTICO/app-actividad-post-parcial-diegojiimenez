@@ -1,0 +1,12 @@
+@startuml iteracionExamenEstadosPasajero
+[*] --> Esperando
+
+Esperando --> Subiendo
+
+Subiendo --> EnRuta
+
+EnRuta --> Bajando
+
+Bajando --> [*]
+
+@enduml
