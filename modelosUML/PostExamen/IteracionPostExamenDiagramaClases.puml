@@ -1,0 +1,34 @@
+@startuml iteracionPostExamenDiagramaClases
+hide empty members
+hide circles
+
+class Ayuntamiento
+class Incidencia
+class Ruta
+class Horario
+class Estacion
+class Vehiculo
+class Conductor
+class Pasajero
+class Abono
+class Tarifa
+class Bus
+class Tren
+class Metro
+
+Ayuntamiento --> Incidencia : gestiona
+Ayuntamiento --> Ruta : administra
+Ruta --> Estacion : incluye *
+Ruta --> Horario : sigue
+Ruta --> Vehiculo : utiliza *
+Vehiculo --> Incidencia : reporta
+Conductor --> Vehiculo : opera
+Pasajero --> Ruta : utiliza
+Pasajero --> Abono : compra
+Abono --> Tarifa : liquida
+Ruta --> Tarifa : tiene
+Estacion --> Horario : muestra
+Vehiculo <|-- Bus
+Vehiculo <|-- Tren
+Vehiculo <|-- Metro
+@enduml
