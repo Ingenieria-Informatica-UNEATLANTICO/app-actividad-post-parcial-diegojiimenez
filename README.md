@@ -5,6 +5,7 @@
 
 ### Diagrama de Clases Compacto
 Este diagrama muestra la estructura de las clases principales del sistema, incluyendo relaciones y herencias entre las entidades.
+
 ![Diagrama de Clases Compacto](./images/PostExamen/iteracionPostExamenDiagramaClases.svg)
 
 ---
@@ -22,18 +23,22 @@ Este diagrama representa una instancia específica de un viaje en el sistema de 
 
 ### 1. Diagrama de Estados para el Pasajero
 Representa el ciclo de vida de un pasajero durante un viaje, desde la espera del transporte hasta la finalización del viaje.
+
 ![Diagrama de Estados para el Pasajero](./images/PostExamen/IteracionPostExamenEstadosPasajero.svg)
 
 ### 2. Diagrama de Estados para la Ruta
 Describe los estados de una ruta desde que se planifica hasta su finalización.
+
 ![Diagrama de Estados para la Ruta](./images/PostExamen/IteracionPostExamenEstadosRuta.svg)
 
 ### 3. Diagrama de Estados para el Abono
 Representa los estados de un abono en función de su vigencia, uso y recarga.
+
 ![Diagrama de Estados para el Abono](./images/PostExamen/IteracionPostExamenEstadosAbono.svg/)
 
 ### 4. Diagrama de Estados para las Incidencias
 Un diagrama sencillo que muestra los estados de una incidencia, en función de si está activa o inactiva.
+
 ![Diagrama de Estados para la Tarifa](./images/PostExamen/IteracionPostExamenEstadosIncidencia.svg)
 
 ---
