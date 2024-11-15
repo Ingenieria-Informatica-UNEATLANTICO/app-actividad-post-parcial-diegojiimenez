@@ -1,0 +1,26 @@
+@startuml iteracionExamenDiagramaObjetos
+hide empty members
+hide circles
+
+class "Ruta1" as ruta1 {
+  nombre = "PTCAN UNEAT"
+  paradas = 20
+  estado = "Activa"
+  destino = "Gonzalez Trevilla"
+}
+
+class  "Pasajero:Manuel" as pasajero1 {
+  nombre = "Manuel"
+  tipoPago = "Efectivo"
+
+}
+
+class  "Vehiculo:Bus" as vehiculo1 {
+  tipo = "Mercedes Benz"
+  asientos = 100
+
+}
+
+ruta1 --> vehiculo1 : usa
+ruta1 --> pasajero1 : transporta
+@enduml
