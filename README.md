@@ -1,53 +1,80 @@
-# Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
+# Sistema de Transporte Público RESPUESTAS EXAMEN
 
-*Este documento es una guía para la realización y entrega de las evaluaciones en las asignaturas PRGx, EDAx e IDSWx del Grado en Ingeniería Informática. Detalla la estructura del repositorio de entrega, los artefactos requeridos y los criterios de evaluación.*
 
-## Enunciado del examen
+## Diagrama de Clases
 
-En el repo de la asignatura, carpeta `/evaluaciones`, apartado del examen correspondiente.
+### Diagrama de Clases Compacto
+Este diagrama muestra la estructura de las clases principales del sistema, incluyendo relaciones y herencias entre las entidades.
 
-### Retos
+![Diagrama de Clases Compacto](./images/Examen/iteracionExamenDiagramaClases.svg)
 
-Indicados dentro del enunciado del examen.
+---
 
-## Entrega del examen
+## Diagrama de Objetos
 
-En el repositorio destinado para tal fin en el examen.
+### Diagrama de Objetos para un Viaje
+Este diagrama representa una instancia específica de un viaje en el sistema de transporte, mostrando cómo interactúan los objetos individuales (como `Ruta`, `Vehiculo`, `Conductor`, `Pasajero`, `Abono`, `Tarifa` y `Estacion`) en un contexto de viaje.
 
-### Artefactos
+![Diagrama de Objetos para un Viaje](./images/Examen/iteracionExamenDiagramaObjetos.svg)
 
-A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
+---
 
-||||
-|-|-|-|
-|1|Archivo **README.md**|**Este archivo**, sobreescrito con su presentación de la propuesta de solución al examen.|
-|2|Código fuente|Proyecto ordenado dentro de la carpeta `/src`.|
-|3|Diagramas UML|Archivos fuente en la carpeta `/modelosUML`.|
-| ||Diagramas exportados en formato .svg en la carpeta `/images`. |
-|4|Imágenes|Si considera necesario incluir imágenes además de los diagramas, deben alojarse en la carpeta `/images` y estar referenciadas en el documento de entrega.|
-| ||Para diagramas use el formato .svg y para imágenes comunes, el formato .png.|
-|5|Documentación adicional|En la carpeta `/documents`.|
+## Diagramas de Estados
 
-### Qué se debe entregar
+### 1. Diagrama de Estados para el Pasajero
+Representa el ciclo de vida de un pasajero durante un viaje, desde la espera del transporte hasta la finalización del viaje.
 
-- Los artefactos a entregar se indican en el examen de modo específico. Se especificará cuales son obligatorios.
-- Usted tiene la libertad de decidir si incluir o no los elementos que no sean explícitamente requeridos en el enunciado del examen. Su inclusión es facultativa y debe basarse en su criterio sobre la relevancia o aporte que estos elementos puedan tener para el trabajo presentado.
-- Todos los artefactos han de quedar adecuadamente relacionados desde el artefacto 1.
+![Diagrama de Estados para el Pasajero](./images/Examen/iteracionExamenEstadosPasajero.svg)
 
-## Se valorará
+### 2. Diagrama de Estados para la Ruta
+Describe los estados de una ruta desde que se planifica hasta su finalización.
 
-- Proceso de creación.
-- Exactitud en la solución.
-- Adecuado reparto de responsabilidades.
-- Código limpio.
-- Claridad del código.
-- Gestión de estados.
-- Y, por supuesto, el uso de los temas vistos en clase.
+![Diagrama de Estados para la Ruta](./images/Examen/IteracionExamenEstadosRuta.svg)
 
-### Se propone/sugiere
 
-|||
-|-|-|
-|Planificación| Planifique su enfoque utilizando diagramas, esquemas, estados y/o pseudocódigo. Lo puede aportar en su repo, como diagrama o como imagen (foto), en la carpeta adecuada y enlazado desde el README.md|
-|Documentación|En dicho README.md puede explicar cómo cada parte contribuye a la solución general. Y como hemos debatido ampliamente, evite los comentarios a su código: ¡que el código se autoexplique!.|
-|Delegación de responsabilidades|Dedíquele un momento a reflexionar sobre cómo reparte las responsabilidades entre los diferentes artefactos y cómo esto afecta la claridad y eficiencia de su solución.|
+---
+
+# Sistema de Transporte Público POST EXAMEN
+
+
+## Diagrama de Clases
+
+### Diagrama de Clases Compacto
+Este diagrama muestra la estructura de las clases principales del sistema, incluyendo relaciones y herencias entre las entidades.
+
+![Diagrama de Clases Compacto](./images/PostExamen/iteracionPostExamenDiagramaClases.svg)
+
+---
+
+## Diagrama de Objetos
+
+### Diagrama de Objetos para un Viaje
+Este diagrama representa una instancia específica de un viaje en el sistema de transporte, mostrando cómo interactúan los objetos individuales (como `Ruta`, `Vehiculo`, `Conductor`, `Pasajero`, `Abono`, `Tarifa` y `Estacion`) en un contexto de viaje.
+
+![Diagrama de Objetos para un Viaje](./images/PostExamen/IteracionPostExamenDiagramaObjetos.svg)
+
+---
+
+## Diagramas de Estados
+
+### 1. Diagrama de Estados para el Pasajero
+Representa el ciclo de vida de un pasajero durante un viaje, desde la espera del transporte hasta la finalización del viaje.
+
+![Diagrama de Estados para el Pasajero](./images/PostExamen/IteracionPostExamenEstadosPasajero.svg)
+
+### 2. Diagrama de Estados para la Ruta
+Describe los estados de una ruta desde que se planifica hasta su finalización.
+
+![Diagrama de Estados para la Ruta](./images/PostExamen/IteracionPostExamenEstadosRuta.svg)
+
+### 3. Diagrama de Estados para el Abono
+Representa los estados de un abono en función de su vigencia, uso y recarga.
+
+![Diagrama de Estados para el Abono](./images/PostExamen/IteracionPostExamenEstadosAbono.svg/)
+
+### 4. Diagrama de Estados para las Incidencias
+Un diagrama sencillo que muestra los estados de una incidencia, en función de si está activa o inactiva.
+
+![Diagrama de Estados para la Tarifa](./images/PostExamen/IteracionPostExamenEstadosIncidencia.svg)
+
+---

@@ -1,0 +1,53 @@
+@startuml IteracionPostExamenDiagramaObjetos
+hide empty members
+
+object Ruta1 {
+    nombre = "Ruta Centro-Norte"
+    distancia = "15 km"
+}
+
+object Vehiculo1 {
+    tipo = "Bus"
+    matricula = "AB-1234"
+}
+
+object Conductor1 {
+    nombre = "Carlos Gómez"
+    licencia = "L-98765"
+}
+
+object Pasajero1 {
+    nombre = "Ana Pérez"
+    idAbono = "ABN-00123"
+}
+
+object Abono1 {
+    tipo = "Mensual"
+    saldo = "$30"
+}
+
+object Tarifa1 {
+    tipo = "Única"
+    costo = "$1.50"
+}
+
+object Estacion1 {
+    nombre = "Estación Central"
+    ubicacion = "Centro Histórico"
+}
+
+object Estacion2 {
+    nombre = "Estación Norte"
+    ubicacion = "Colonia Escalón"
+}
+
+Ruta1 --> Estacion1 : incluye
+Ruta1 --> Estacion2 : incluye
+Ruta1 --> Tarifa1 : tiene
+Vehiculo1 --> Ruta1 : sigue
+Conductor1 --> Vehiculo1 : opera
+Pasajero1 --> Ruta1 : utiliza
+Pasajero1 --> Abono1 : compra
+Abono1 --> Tarifa1 : liquida
+
+@enduml

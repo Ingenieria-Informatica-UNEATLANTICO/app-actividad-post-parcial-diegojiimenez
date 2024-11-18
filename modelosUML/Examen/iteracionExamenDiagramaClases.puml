@@ -1,0 +1,40 @@
+@startuml iteracionExamen
+hide empty members 
+hide circles
+
+class Ayuntamiento 
+class Incidencia
+Class Abonos
+Class Ruta 
+Class Tarifas 
+Class Vehiculo
+Class Paradas 
+Class Horarios
+Class Personas 
+Class Conductor 
+Class Pasajero 
+Class Bus 
+Class Tren 
+Class Metro 
+
+
+Ayuntamiento --> Incidencia : administra
+Ayuntamiento --> Abonos : ofrece
+Ayuntamiento --> Ruta : administra
+Ayuntamiento --> Tarifas : define
+Ayuntamiento --> Horarios : define
+Ruta --> Paradas : contiene
+Ruta --> Horarios : sigue
+Paradas ...> Horarios : muestran
+Ruta --> Vehiculo : usa
+Vehiculo --> Personas : transporta
+Conductor --|> Personas
+Pasajero --|> Personas
+Pasajero --> Abonos : adquiere
+Ruta --> Tarifas : tiene
+Bus --|> Vehiculo
+Tren --|> Vehiculo
+Metro --|> Vehiculo
+Incidencia --> Ruta : ocurre en
+Personas --> Tarifas : pagan
+@enduml
